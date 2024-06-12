@@ -14,7 +14,7 @@ namespace Memory.View
 
         private bool _flipping = false;
 
-        private quaternion _rotation;
+        private Quaternion _rotation;
 
         private void Start()
         {
