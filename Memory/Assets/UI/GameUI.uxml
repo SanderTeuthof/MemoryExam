@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="MainElement" style="flex-grow: 1; align-items: flex-start; justify-content: center; align-self: auto; flex-direction: row;">
+        <ui:VisualElement name="Player1UI" style="flex-grow: 1; left: auto; width: 20%; top: auto; height: 100%; min-height: auto; justify-content: flex-start; align-items: flex-start; align-self: flex-start;">
+            <ui:Label tabindex="-1" text="Player Ship Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Player1Name" style="height: 10%; width: 100%; font-size: 40%; -unity-text-align: middle-left; white-space: normal; color: rgb(255, 255, 255); align-self: flex-start;" />
+            <ui:VisualElement name="ScoreElement" style="flex-grow: 1; align-items: center; flex-direction: row; min-height: auto; max-height: 36px; justify-content: flex-start; align-self: stretch; -unity-text-outline-color: rgba(255, 255, 255, 0);">
+                <ui:Label tabindex="-1" text="Score:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Score" style="color: rgb(255, 255, 255); align-self: center;" />
+                <ui:Label tabindex="-1" text="Health as Int" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Player1Score" style="-unity-text-align: upper-left; flex-direction: column; align-items: auto; justify-content: flex-start; align-self: center; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TimeElement" style="flex-grow: 1; align-items: center; flex-direction: row; min-height: auto; max-height: 36px; justify-content: flex-start; align-self: stretch;">
+                <ui:Label tabindex="-1" text="Time:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Time" style="color: rgb(255, 255, 255);" />
+                <ui:Label tabindex="-1" text="Ability Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Player1Time" style="-unity-text-align: upper-left; flex-direction: column; align-items: auto; justify-content: flex-start; align-self: center; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Player2UI" style="flex-grow: 1; left: auto; width: 20%; top: auto; height: 100%; min-height: auto; justify-content: flex-start; align-items: flex-start; align-self: flex-end;">
+            <ui:Label tabindex="-1" text="Enemy Ship Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Player2Name" style="height: 10%; width: 100%; font-size: 40%; -unity-text-align: middle-right; white-space: normal; color: rgb(255, 255, 255);" />
+            <ui:VisualElement name="ScoreElement" style="flex-grow: 1; align-items: center; flex-direction: row; min-height: auto; max-height: 36px; justify-content: flex-end; align-self: stretch; -unity-text-outline-color: rgba(255, 255, 255, 0);">
+                <ui:Label tabindex="-1" text="Score:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Score" style="color: rgb(255, 255, 255); height: 26px;" />
+                <ui:Label tabindex="-1" text="Health as Int" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Player2Score" style="-unity-text-align: upper-left; flex-direction: column; align-items: auto; justify-content: flex-start; align-self: center; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TimeElement" style="flex-grow: 1; align-items: center; flex-direction: row; min-height: auto; max-height: 36px; justify-content: flex-end; align-self: stretch;">
+                <ui:Label tabindex="-1" text="Time:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Time" style="color: rgb(255, 255, 255);" />
+                <ui:Label tabindex="-1" text="Ability Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Player2Time" style="-unity-text-align: upper-left; flex-direction: column; align-items: auto; justify-content: flex-start; align-self: center; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
