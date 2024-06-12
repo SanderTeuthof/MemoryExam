@@ -7,6 +7,17 @@ namespace Memory.View
 {
     public class BoardView : BaseView<BoardModel>
     {
+
+        [SerializeField]
+        private float _tileSpacing = 1f;
+        
+        private Camera _camera;
+
+        private void Awake()
+        {
+            _camera = Camera.main;
+        }
+
         public void SetUpMemoryBoardView(BoardModel model, GameObject tilePrefab, List<Material> materials)
         {
             Model = model;
@@ -14,7 +25,7 @@ namespace Memory.View
             int numRows = model.Rows;
             int numColumns = model.Columns;
             int numTiles = model.NumTiles;
-            float tileSpacing = 1.2f; // Adjust this value as needed for spacing between tiles
+            float tileSpacing = _tileSpacing; 
 
             // Calculate the total width and height of the board
             float boardWidth = numColumns * tileSpacing;
@@ -53,6 +64,8 @@ namespace Memory.View
                     }
                 }
             }
+
+            _camera.orthographicSize = boardHeight / 2 * 1.2f;
         }
 
         public override void Model_PropertyChanged(object sender, PropertyChangedEventArgs e)
